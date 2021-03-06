@@ -21,7 +21,7 @@ function commandHandler(command, args, message) {
     }
 }
 
-function commandServerHandler(message) {
+function commandserverHandler(message) {
     message.channel.send(`The name of the server is \`${message.guild.name}\``);
     return;
 }
@@ -36,7 +36,7 @@ function helpHandler(message) {
        `);
 }
 
-function testCommandHandler(message, args) {
+function commandtestHandler(message, args) {
     if (!args.length) {
         return message.channel.send(`No arguments provided.`);
     }
@@ -48,4 +48,4 @@ function testCommandHandler(message, args) {
     return message.channel.send(args);
 }
 
-module.exports = { commandHandler, commandServerHandler, helpHandler };
+module.exports = { commandHandler };
