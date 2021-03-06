@@ -1,0 +1,27 @@
+{
+  "name": "ajia-bunker-bot-v2",
+  "version": "1.0.0",
+  "description": "This package contains the next version of Ajia Bunker bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goku-kun/ajia-bunker-bot-v2.git"
+  },
+  "keywords": [
+    "Discord",
+    "Bot"
+  ],
+  "author": "Dharmarajsinh Jethva",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Goku-kun/ajia-bunker-bot-v2/issues"
+  },
+  "homepage": "https://github.com/Goku-kun/ajia-bunker-bot-v2#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
