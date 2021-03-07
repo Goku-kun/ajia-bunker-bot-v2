@@ -11,7 +11,7 @@ function commandHandler(command, args, message) {
             commandServerHandler(message);
             break;
         case "test":
-            testCommandHandler(message, args);
+            commandTestHandler(message, args);
             break;
 
         default:
@@ -36,7 +36,7 @@ function helpHandler(message) {
        `);
 }
 
-function commandtestHandler(message, args) {
+function commandTestHandler(message, args) {
     if (!args.length) {
         return message.channel.send(`No arguments provided.`);
     }
