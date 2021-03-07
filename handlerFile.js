@@ -21,7 +21,7 @@ function commandHandler(command, args, message) {
     }
 }
 
-function commandserverHandler(message) {
+function commandServerHandler(message) {
     message.channel.send(`The name of the server is \`${message.guild.name}\``);
     return;
 }
