@@ -4,7 +4,11 @@ const fs = require('fs');
 const { prefix, TOKEN } = require('./config.json');
 
 dotenv.config();
-const client = new Discord.Client();
+const intents = new Discord.Intents([
+    Discord.Intents.NON_PRIVILEGED,
+    'GUILD_MEMBERS',
+]);
+const client = new Discord.Client({ ws: { intents } });
 client.commands = new Discord.Collection();
 const commandFiles = fs
     .readdirSync('./commands')
